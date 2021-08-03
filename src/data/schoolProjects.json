@@ -1,0 +1,40 @@
+[
+  {
+    "projectId": 1,
+    "name": "The Game Of War",
+    "description": "This was the first coding project I built...",
+    "languagesUsed": ["JavaScript  - HTML  - CSS"],
+    "librariesUsed": ["Bootstrap"],
+    "projectURL": "",
+    "timeToBuild": "1 Week"
+  },
+  {
+    "projectId": 2,
+    "name": "Digital Bookshelf",
+    "description": "This was the second coding project I built...",
+    "languagesUsed": [
+      "JavaScript  - HTML  - CSS  - Express  - MongoDb  - Mongoose"
+    ],
+    "librariesUsed": ["Bootstrap"],
+    "projectURL": "",
+    "timeToBuild": "1 Week"
+  },
+  {
+    "projectId": 3,
+    "name": "Scholar Stack",
+    "description": "This was the third coding project I built as a team of 3...",
+    "languagesUsed": ["Python  - HTML  - CSS  - Django"],
+    "librariesUsed": ["Bootstrap"],
+    "projectURL": "",
+    "timeToBuild": "1 Week"
+  },
+  {
+    "projectId": 4,
+    "name": "Formation Tech",
+    "description": "This was the last coding project I built in school...",
+    "languagesUsed": ["JavaScript  - HTML  - CSS  - React.js  - Express.js"],
+    "librariesUsed": ["Bootstrap"],
+    "projectURL": "",
+    "timeToBuild": "1 Week"
+  }
+]

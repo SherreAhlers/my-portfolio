@@ -1,0 +1,33 @@
+[
+  {
+    "projectId": 1,
+    "name": "Platform Dance Showcase",
+    "description": "This is the first coding project I worked on after graduating school...",
+    "languagesUsed": [
+      "JavaScript  - HTML  - CSS  - React.js  - Gatsby.js  - GraphQl"
+    ],
+    "librariesUsed": ["Material-UI"],
+    "projectURL": "coming soon",
+    "timeToBuild": "8 months"
+  },
+  {
+    "projectId": 2,
+    "name": "Digital Bookshelf 2",
+    "description": "This is a new and improved version of my original project Digital Bookshelf...",
+    "languagesUsed": [
+      "JavaScript  - HTML  - CSS  - React.js  - Gatsby.js  - GraphQl"
+    ],
+    "librariesUsed": ["Material-UI"],
+    "projectURL": "coming soon",
+    "timeToBuild": "..."
+  },
+  {
+    "projectId": 3,
+    "name": "Demo-Bot",
+    "description": "I am working on this project for a demolition robotic company...",
+    "languagesUsed": ["JavaScript  - HTML  - CSS  - React.js"],
+    "librariesUsed": ["Material-UI"],
+    "projectURL": "coming soon",
+    "timeToBuild": "..."
+  }
+]

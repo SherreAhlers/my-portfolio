@@ -15,6 +15,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.4",
     "gatsby": "^3.10.2",
     "gatsby-plugin-gatsby-cloud": "^2.10.1",
     "gatsby-plugin-image": "^1.10.1",
@@ -23,9 +26,14 @@
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-plugin-sitemap": "^4.6.0",
     "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-theme-material-ui": "^2.0.1",
+    "gatsby-transformer-json": "^3.10.0",
     "gatsby-transformer-sharp": "^3.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.6"
   }
 }

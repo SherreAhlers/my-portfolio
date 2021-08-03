@@ -1,28 +1,39 @@
+const path = require("path")
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
     title: "Sherre-Ahlers-Portfolio",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `Sherre-Ahlers-Portfolio`,
+        short_name: `portfolio`,
+        icon: `src/images/icon.png`,
       },
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    `gatsby-theme-material-ui`,
+    `gatsby-transformer-json`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        path: "./src/data/",
       },
-      __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        src: path.join(__dirname, "src"),
+        components: path.join(__dirname, "src/components"),
+        containers: path.join(__dirname, "src/containers"),
+        images: path.join(__dirname, "src/images"),
+      },
     },
   ],
-};
+}
