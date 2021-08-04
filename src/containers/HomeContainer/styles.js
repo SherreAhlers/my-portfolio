@@ -6,9 +6,9 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     flexDirection: "column",
     width: "100%",
-    height: "100%",
+    height: "76.5vh",
     background:
-      "linear-gradient(black, black, #F808BB, #F8F005, #F808BB, #F8F005, black)",
+      "linear-gradient( black, #F808BB, #F8F005, #F808BB, #F8F005, black)",
   },
   homeHeader: {
     textAlign: "center",
