@@ -102,58 +102,6 @@ const useStyles = makeStyles(theme => ({
     fontSize: "18px",
     [theme.breakpoints.up("md")]: {},
   },
-  schoolProjectsDescription: {
-    textAlign: "center",
-    margin: "0 20px",
-    color: "white",
-    [theme.breakpoints.up("md")]: {},
-  },
-  languagesUsedTitle: {
-    fontSize: "16px",
-    textAlign: "center",
-    color: "#E8EE26",
-    [theme.breakpoints.up("md")]: {},
-  },
-  languagesUsed: {
-    textAlign: "center",
-    color: "white",
-    [theme.breakpoints.up("md")]: {},
-  },
-  librariesUsedTitle: {
-    fontSize: "16px",
-    textAlign: "center",
-    color: "#E8EE26",
-    [theme.breakpoints.up("md")]: {},
-  },
-  librariesUsed: {
-    textAlign: "center",
-    color: "white",
-    [theme.breakpoints.up("md")]: {},
-  },
-  projectURLTitle: {
-    fontSize: "25px",
-    textAlign: "center",
-    color: "#29EE26",
-    [theme.breakpoints.up("md")]: {},
-  },
-  projectURL: {
-    textAlign: "center",
-    color: "white",
-    fontSize: "20px",
-    margin: "0 20px 80px",
-    [theme.breakpoints.up("md")]: {},
-  },
-  timeToBuildTitle: {
-    ontSize: "16px",
-    textAlign: "center",
-    color: "#E8EE26",
-    [theme.breakpoints.up("md")]: {},
-  },
-  timeToBuild: {
-    textAlign: "center",
-    color: "white",
-    [theme.breakpoints.up("md")]: {},
-  },
 }))
 
 export default useStyles

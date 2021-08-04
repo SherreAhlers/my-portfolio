@@ -1,12 +1,11 @@
 import React from "react"
+
 import SchoolProjectsCard from "../../components/SchoolProjectsCard"
-// import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 import useStyles from "./styles"
 
 const InTheBeginningContainer = ({ data }) => {
   const classes = useStyles()
-  // const isMinWidth960px = useMediaQuery("(min-width:960px)")
   return (
     <main>
       <div className={classes.inTheBeginningContainer}>

@@ -8,7 +8,7 @@ const AboutContainer = () => {
     <main className={classes.homeContainer}>
       <section>
         <div className={classes.homeHeader}>
-          <div className={classes.homeTitle}>SHERRE AHLERS PORTFOLIO</div>
+          {/* <div className={classes.homeTitle}>SHERRE AHLERS PORTFOLIO</div> */}
           <div className={classes.homeJobTitle}>Frontend Developer</div>
         </div>
       </section>

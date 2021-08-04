@@ -8,31 +8,27 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     height: "100%",
     background:
-      "linear-gradient(black, black, #F808BB, #F8F005, #F808BB, #F8F005, black)",
+      "linear-gradient(black, #353A35, #F808BB, #F8F005, #F808BB, #34C032 , black)",
+    [theme.breakpoints.up("md")]: {
+      background:
+        "linear-gradient(black, #353A35, #F808BB, #F8F005, #F8F005, #F808BB, #34C032, #34C032, black)",
+    },
   },
   homeHeader: {
-    margin: "0 5px",
+    margin: "10px 5px 0",
     textAlign: "center",
 
     [theme.breakpoints.up("md")]: {
       margin: "50px 60px 0",
     },
   },
-  homeTitle: {
-    margin: "30px 20px 0",
-    color: "#FA04A9",
-    fontSize: "35px",
-
-    [theme.breakpoints.up("md")]: {
-      fontSize: "50px",
-    },
-  },
   homeJobTitle: {
     color: "#7D0ACF",
-    fontSize: "30px",
+    fontSize: "40px",
+    margin: "40px 0 0",
 
     [theme.breakpoints.up("md")]: {
-      fontSize: "45px",
+      fontSize: "52px",
     },
   },
   imageContainer: {
@@ -40,12 +36,12 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     flexDirection: "column",
     background: "radial-gradient(white, green, white)",
-    margin: "20px 20px 40px",
+    margin: "45px 20px 40px",
     paddingBottom: "20px",
     width: "400px",
     alignSelf: "center",
     [theme.breakpoints.up("md")]: {
-      width: "650px",
+      width: "550px",
     },
   },
   homeImageContainer: {
@@ -58,8 +54,8 @@ const useStyles = makeStyles(theme => ({
     height: "350px",
 
     [theme.breakpoints.up("md")]: {
-      width: "625px",
-      height: "500px",
+      width: "525px",
+      height: "470px",
     },
   },
   homeImage: {
@@ -79,10 +75,12 @@ const useStyles = makeStyles(theme => ({
     color: "#540891",
     marginTop: "20px",
     fontWeight: "bold",
+    fontSize: "25px",
   },
   homeBio: {
     textAlign: "justify",
     color: "white",
+    fontSize: "17px",
   },
   schoolContainer: {
     margin: "0 20px",
@@ -90,12 +88,14 @@ const useStyles = makeStyles(theme => ({
   schoolName: {
     display: "flex",
     justifyContent: "center",
-    color: "#BA5EE0",
+    color: "#540891",
     marginTop: "20px",
+    fontSize: "25px",
   },
   whatILearned: {
     textAlign: "justify",
     color: "white",
+    fontSize: "17px",
   },
   careerPathContainer: {
     margin: "0 20px",
@@ -103,12 +103,14 @@ const useStyles = makeStyles(theme => ({
   careerPathTitle: {
     display: "flex",
     justifyContent: "center",
-    color: "#7D0ACF",
+    color: "#540891",
     marginTop: "20px",
+    fontSize: "25px",
   },
   whyFrontendDeveloper: {
     textAlign: "justify",
     color: "white",
+    fontSize: "17px",
   },
 }))
 

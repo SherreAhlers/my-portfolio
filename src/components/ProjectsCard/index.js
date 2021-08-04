@@ -6,14 +6,7 @@ import { Card, CardMedia, CardContent } from "@material-ui/core"
 
 import useStyles from "./styles"
 
-const ProjectsCard = ({
-  name,
-  // description,
-  // languagesUsed,
-  // librariesUsed,
-  // timeToBuild,
-  // projectURL,
-}) => {
+const ProjectsCard = ({ name }) => {
   const classes = useStyles()
   const isMinWidth960px = useMediaQuery("(min-width:960px)")
   const project = name.split(" ").join("-")
@@ -27,7 +20,7 @@ const ProjectsCard = ({
           {isMinWidth960px ? (
             <CardMedia
               component="img"
-              height="250"
+              height="280"
               alt="projects"
               image={
                 require(`../../images/projects/${project}-home-page.jpg`)
