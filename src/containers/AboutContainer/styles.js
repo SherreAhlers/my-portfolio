@@ -1,20 +1,21 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
-  homeContainer: {
+  aboutContainer: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     width: "100%",
     height: "100%",
     background:
-      "linear-gradient(black, #353A35, #F808BB, #F8F005, #F808BB, #34C032 , black)",
+      "linear-gradient(black, #353A35, #F8F005, #F808BB, #F808BB, #34C032, #353A35)",
+
     [theme.breakpoints.up("md")]: {
       background:
-        "linear-gradient(black, #353A35, #F808BB, #F8F005, #F8F005, #F808BB, #34C032, #34C032, black)",
+        "linear-gradient(black, #353A35, #F808BB, #F8F005, #F8F005, #F808BB, #34C032, #34C032, #353A35)",
     },
   },
-  homeHeader: {
+  aboutHeader: {
     margin: "10px 5px 0",
     textAlign: "center",
 
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
       margin: "50px 60px 0",
     },
   },
-  homeJobTitle: {
+  aboutJobTitle: {
     color: "#7D0ACF",
     fontSize: "40px",
     margin: "40px 0 0",
@@ -32,85 +33,93 @@ const useStyles = makeStyles(theme => ({
     },
   },
   imageContainer: {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
     background: "radial-gradient(white, green, white)",
     margin: "45px 20px 40px",
     paddingBottom: "20px",
-    width: "400px",
+    width: "380px",
     alignSelf: "center",
     [theme.breakpoints.up("md")]: {
       width: "550px",
     },
   },
-  homeImageContainer: {
+  aboutImageContainer: {
     display: "flex",
     justifyContent: "center",
     margin: "20px 20px 0",
   },
-  homeImageParent: {
-    width: "375px",
-    height: "350px",
+  aboutImageParent: {
+    width: "355px",
+    height: "450px",
 
     [theme.breakpoints.up("md")]: {
       width: "525px",
-      height: "470px",
+      height: "650px",
     },
   },
-  homeImage: {
+  aboutImage: {
     width: "100%",
     height: "100%",
   },
-  homeAboutContainer: {
+  aboutMeContainer: {
     display: "flex",
     justifyContent: "center",
   },
   backgroundInfo: {
     margin: "0 20px",
   },
-  whoAmI: {
+  title: {
     display: "flex",
     justifyContent: "center",
     color: "#540891",
     marginTop: "20px",
     fontWeight: "bold",
     fontSize: "25px",
+    [theme.breakpoints.up("md")]: {
+      fontSize: "35px",
+    },
   },
-  homeBio: {
+  sectionInfo: {
     textAlign: "justify",
-    color: "white",
+    color: "#2D2337",
     fontSize: "17px",
+    maxWidth: "500px",
+    border: "4px dotted #540891",
+    padding: "20px",
+    fontWeight: "bold",
+    margin: "0 20px 30px",
+    [theme.breakpoints.up("md")]: {
+      maxWidth: "750px",
+      fontSize: "22px",
+    },
+  },
+  dogImageContainer: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+    margin: "5px 20px 20px",
+    [theme.breakpoints.up("md")]: {
+      margin: "10px 30px 30px",
+    },
+  },
+  dogImage: {
+    borderRadius: "30%",
+    border: "solid 5px limegreen",
+    width: "120px",
+    [theme.breakpoints.up("md")]: {
+      width: "200px",
+    },
   },
   schoolContainer: {
-    margin: "0 20px",
-  },
-  schoolName: {
     display: "flex",
     justifyContent: "center",
-    color: "#540891",
-    marginTop: "20px",
-    fontSize: "25px",
-  },
-  whatILearned: {
-    textAlign: "justify",
-    color: "white",
-    fontSize: "17px",
+    margin: "0 20px",
   },
   careerPathContainer: {
-    margin: "0 20px",
-  },
-  careerPathTitle: {
+    margin: "10px 20px",
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
-    color: "#540891",
-    marginTop: "20px",
-    fontSize: "25px",
-  },
-  whyFrontendDeveloper: {
-    textAlign: "justify",
-    color: "white",
-    fontSize: "17px",
+    alignSelf: "center",
   },
 }))
 
