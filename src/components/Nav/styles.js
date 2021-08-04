@@ -13,6 +13,15 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "92%",
     height: "20px",
   },
+  linksDesktop: {
+    display: "flex",
+    justifyContent: "space-around",
+    fontSize: "20px",
+    padding: "15px",
+  },
+  link: {
+    color: "#F808BB",
+  },
   menuIcon: {
     fontSize: "30px",
   },
@@ -24,6 +33,7 @@ const useStyles = makeStyles(theme => ({
     textDecoration: "none",
     color: "#FA04A9",
     borderBottom: "1px solid #CE13DB",
+    padding: "6px",
   },
   paper: {
     backgroundColor: "black",

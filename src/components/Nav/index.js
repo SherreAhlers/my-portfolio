@@ -9,7 +9,8 @@ import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 import ChevronRightIcon from "@material-ui/icons/ChevronRight"
 import ListItem from "@material-ui/core/ListItem"
-import { Link } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 import { NAVLINKS } from "./constants"
 import useStyles from "./styles"
@@ -17,6 +18,7 @@ import { ListItemText } from "@material-ui/core"
 
 const Nav = () => {
   const classes = useStyles()
+  const isMinWidth960px = useMediaQuery("(min-width:960px)")
   const [open, setOpen] = React.useState(false)
 
   const handleDrawerOpen = () => {
@@ -31,17 +33,31 @@ const Nav = () => {
     <div>
       <CssBaseline />
       <AppBar position="static" className={classes.navContainer}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerOpen}
-            className={classes.iconButton}
-          >
-            <MenuIcon className={classes.menuIcon} />
-          </IconButton>
-        </Toolbar>
+        {isMinWidth960px ? (
+          <div className={classes.linksDesktop}>
+            <Link to="/about" className={classes.link}>
+              ABOUT
+            </Link>
+            <Link to="/inTheBeginning" className={classes.link}>
+              IN THE BEGINNING
+            </Link>
+            <Link to="/projects" className={classes.link}>
+              PROJECTS
+            </Link>
+          </div>
+        ) : (
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerOpen}
+              className={classes.iconButton}
+            >
+              <MenuIcon className={classes.menuIcon} />
+            </IconButton>
+          </Toolbar>
+        )}
       </AppBar>
       <Drawer
         classes={{

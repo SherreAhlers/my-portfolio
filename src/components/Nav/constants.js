@@ -1,8 +1,8 @@
 export const NAVLINKS = [
   {
     id: 1,
-    title: "HOME",
-    path: "/",
+    title: "ABOUT",
+    path: "/about",
   },
   {
     id: 2,
@@ -13,10 +13,5 @@ export const NAVLINKS = [
     id: 3,
     title: "PROJECTS",
     path: "/projects",
-  },
-  {
-    id: 4,
-    title: "ABOUT",
-    path: "/about",
   },
 ]
