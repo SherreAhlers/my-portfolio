@@ -19,7 +19,7 @@ const SchoolProjectsCard = ({ name }) => {
         className={classes.card}
         onClick={() => navigate(`/schoolProjects/${schoolProject}`)}
       >
-        <Link to={`/schoolprojects/${schoolProject}`}>
+        <Link to={`/school-projects/${schoolProject}`}>
           {isMinWidth960px ? (
             <CardMedia
               component="img"

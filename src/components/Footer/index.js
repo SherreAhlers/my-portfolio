@@ -24,6 +24,7 @@ const Footer = () => {
               https://www.linkedin.com/in/sherre-ahlers-software-engineer/
             </a>
           </p>
+          <p className={classes.linkdinLink}>(210) 426-5648</p>
         </div>
         <div className={classes.copyrightContainer}>
           <CopyrightIcon className={classes.copyrightIcon} />
