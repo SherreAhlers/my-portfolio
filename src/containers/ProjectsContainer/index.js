@@ -1,10 +1,11 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 import ProjectsCard from "../../components/ProjectsCard"
 
 import useStyles from "./styles"
 
-const ProjectsContainer = ({ projects }) => {
+const ProjectsContainer = ({ data }) => {
   const classes = useStyles()
   return (
     <div>
@@ -14,8 +15,8 @@ const ProjectsContainer = ({ projects }) => {
           <div className={classes.imageOuterContainer}>
             <div className={classes.projectsPageImageContainer}>
               <div className={classes.projectsPageImageParent}>
-                <img
-                  src={require(`../../images/projects-cartoon.jpg`).default}
+                <StaticImage
+                  src="../../images/projects-cartoon.jpg"
                   alt="project-cartoon"
                   className={classes.projectsPageImage}
                 />
@@ -24,7 +25,7 @@ const ProjectsContainer = ({ projects }) => {
           </div>
         </section>
         <section className={classes.projectContainer}>
-          {projects.map(({ node }, i) => {
+          {data.allProjectsJson.edges.map(({ node }, i) => {
             const project = node.name
               .split(" ")
               .join("-")

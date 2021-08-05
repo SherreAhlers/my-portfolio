@@ -25,7 +25,7 @@ const SchoolProjectContainer = ({ data }) => {
           </div>
           <div className={classes.imageContainer}>
             <div className={classes.imageParent}>
-              <img src="" className={classes.image} />
+              <img src="" className={classes.image} alt="" />
             </div>
           </div>
         </section>

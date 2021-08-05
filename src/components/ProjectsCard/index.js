@@ -1,5 +1,5 @@
 import React from "react"
-// import { navigate } from "gatsby"
+import { navigate } from "gatsby"
 import { Link } from "gatsby"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { Card, CardMedia, CardContent } from "@material-ui/core"
@@ -14,9 +14,9 @@ const ProjectsCard = ({ name }) => {
     <div className={classes.root}>
       <Card
         className={classes.card}
-        // onClick={() => navigate(`/projects/${project}`)}
+        onClick={() => navigate(`/projects/${project}`)}
       >
-        <Link to="/">
+        <Link to={`/projects/${project}`}>
           {isMinWidth960px ? (
             <CardMedia
               component="img"

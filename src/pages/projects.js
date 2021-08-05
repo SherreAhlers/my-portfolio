@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 const Projects = ({ data }) => {
   return (
     <Layout>
-      <ProjectsContainer projects={data.allProjectsJson.edges} />
+      <ProjectsContainer data={data} />
     </Layout>
   )
 }

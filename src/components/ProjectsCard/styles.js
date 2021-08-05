@@ -4,7 +4,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: "block",
     width: "400px",
-    margin: "10px 20px 30px",
+    margin: "10px 20px 35px",
+    padding: "5px",
 
     [theme.breakpoints.up("md")]: {
       width: "480px",
@@ -13,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   },
   card: {
     background: "linear-gradient(#0C6A0A, #1867AD, #4C0B91)",
-    padding: "20px",
+    padding: "20px 20px",
   },
   projectsName: {
     display: "flex",
@@ -22,6 +23,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     fontSize: "20px",
     textAlign: "center",
+    margin: "25px 5px 0",
   },
 }))
 

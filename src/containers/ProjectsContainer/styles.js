@@ -9,9 +9,16 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     background:
       "linear-gradient(black, #F808BB, #F8F005, #F808BB, #F8F005, black)",
+    paddingBottom: "50px",
+    [theme.breakpoints.only("md")]: {
+      paddingBottom: "70px",
+    },
   },
   introContainer: {
-    alignSelf: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    marginTop: "60px",
   },
   projectsPageTitle: {
     fontSize: "35px",
@@ -21,22 +28,20 @@ const useStyles = makeStyles(theme => ({
   projectsPageImageContainer: {
     display: "flex",
     justifyContent: "center",
-    background: "radial-gradient(white, white, orange, white, orange, orange)",
-    width: "380px",
-    padding: "20px 5px",
-    margin: "10px 20px",
+    margin: "10px 20px 40px",
+
     [theme.breakpoints.up("md")]: {
-      background:
-        "radial-gradient(white, orange, orange, orange, white, orange)",
-      width: "500px",
-      margin: "10px 50px",
+      margin: "10px 30px 60px",
     },
   },
   projectsPageImageParent: {
-    width: "340px",
+    width: "385px",
     height: "300px",
+    border: "20px solid orange",
+
     [theme.breakpoints.up("md")]: {
       width: "450px",
+      height: "400px",
     },
   },
   projectsPageImage: {

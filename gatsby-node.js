@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   /**
-   * This is for In The Beginning page + School Project page
+   * This is for In School Projects page + School Project page
    */
   if (node.internal.type === "SchoolProjectsJson") {
     const slug = createFilePath({
@@ -31,7 +31,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   /**
    * This is for Projects + Project page
    */
-  if (node.internal.type == "ProjectsJson") {
+  if (node.internal.type === "ProjectsJson") {
     const slug = createFilePath({ node, getNode, basePath: `projects` })
     const name = node.name
       .split(" ")
@@ -41,7 +41,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      vvalue: `${slug}${name}`,
+      value: `${slug}${name}`,
     })
   }
 }
@@ -55,7 +55,7 @@ exports.createPages = async ({ graphql, actions }) => {
   /**
    * This is for In the Beginning + School Project page
    */
-  const inTheBeginningQuery = await graphql(`
+  const schoolProjectsQuery = await graphql(`
     query {
       allSchoolProjectsJson {
         edges {
@@ -68,7 +68,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  inTheBeginningQuery.data.allSchoolProjectsJson.edges.forEach(({ node }) => {
+  schoolProjectsQuery.data.allSchoolProjectsJson.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(
