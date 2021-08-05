@@ -1,29 +1,25 @@
 import React from "react"
-// import { navigate } from "gatsby"
+import { navigate } from "gatsby"
 import { Link } from "gatsby"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { Card, CardMedia, CardContent } from "@material-ui/core"
 
 import useStyles from "./styles"
 
-const SchoolProjectsCard = ({
-  name,
-  // description,
-  // languagesUsed,
-  // librariesUsed,
-  // timeToBuild,
-  // projectURL,
-}) => {
+const SchoolProjectsCard = ({ name }) => {
   const classes = useStyles()
   const isMinWidth960px = useMediaQuery("(min-width:960px)")
-  const schoolProject = name.split(" ").join("-")
+  const schoolProject = name
+    .split(" ")
+    .join("-")
+    .replace(/(^\w|\s\w)/g, m => m.toUpperCase())
   return (
     <div className={classes.root}>
       <Card
         className={classes.card}
-        // onClick={() => navigate(`/projects/${project}`)}
+        onClick={() => navigate(`/schoolProjects/${schoolProject}`)}
       >
-        <Link to="/">
+        <Link to={`/schoolprojects/${schoolProject}`}>
           {isMinWidth960px ? (
             <CardMedia
               component="img"

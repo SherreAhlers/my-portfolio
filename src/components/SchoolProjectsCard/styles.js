@@ -7,12 +7,10 @@ const useStyles = makeStyles(theme => ({
     alignSelf: "center",
     justifyContent: "center",
     [theme.breakpoints.up("md")]: {
-      // width: "450px",
-      width: "28%",
+      width: "450px",
       display: "flex",
       flexDirection: "row",
       flexWrap: "wrap",
-      // margin: "20px -50px",
       justifyContent: "center",
     },
   },

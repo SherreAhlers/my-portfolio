@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import InTheBeginningContainer from "containers/InTheBeginningContainer"
 import Layout from "../components/Layout"
+import SchoolProjectsContainer from "../containers/SchoolProjectsContainer"
 
-const InTheBeginning = ({ data }) => {
+const SchoolProjects = ({ data }) => {
   return (
     <Layout>
-      <InTheBeginningContainer data={data} />
+      <SchoolProjectsContainer data={data} />
     </Layout>
   )
 }
@@ -28,4 +28,4 @@ export const query = graphql`
   }
 `
 
-export default InTheBeginning
+export default SchoolProjects

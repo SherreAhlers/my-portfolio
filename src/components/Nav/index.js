@@ -38,8 +38,8 @@ const Nav = () => {
             <Link to="/about" className={classes.link}>
               ABOUT
             </Link>
-            <Link to="/inTheBeginning" className={classes.link}>
-              IN THE BEGINNING
+            <Link to="/school-projects" className={classes.link}>
+              SCHOOL PROJECTS
             </Link>
             <Link to="/projects" className={classes.link}>
               PROJECTS

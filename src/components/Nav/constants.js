@@ -6,8 +6,8 @@ export const NAVLINKS = [
   },
   {
     id: 2,
-    title: "IN THE BEGINNING",
-    path: "/inTheBeginning",
+    title: "SCHOOL PROJECTS",
+    path: "/school-projects",
   },
   {
     id: 3,
