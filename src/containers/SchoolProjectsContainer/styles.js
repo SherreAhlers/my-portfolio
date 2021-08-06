@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
   },
   schoolProjectsSectionTitle: {
-    color: "#4CA23D",
+    color: "#71D78B",
     fontSize: "28px",
     textAlign: "center",
     [theme.breakpoints.up("md")]: {

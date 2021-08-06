@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
 
 import Layout from "../../components/Layout"
 
@@ -16,40 +17,58 @@ const SchoolProjectContainer = ({ data }) => {
     timeToBuild,
   } = data.schoolProjectsJson
 
+  const schoolProject = name
+    .split(" ")
+    .join("-")
+    .replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+
   return (
     <Layout>
-      <main className={classes.schoolProjectContainer}>
+      <main className={classes.pageContainer}>
         <section className={classes.header}>
           <div className={classes.nameContainer}>
             <p className={classes.name}>{name}</p>
           </div>
           <div className={classes.imageContainer}>
             <div className={classes.imageParent}>
-              <img src="" className={classes.image} alt="" />
+              <img
+                src={
+                  require(`../../images/schoolProjects/${schoolProject}-home-page.jpg`)
+                    .default
+                }
+                className={classes.image}
+                alt="Game-Of-War-HomePage"
+              />
             </div>
           </div>
         </section>
-        <section className={classes.schoolProjectInfoContainer}>
+        <section className={classes.infoContainer}>
           <div className={classes.descriptionContainer}>
             <p className={classes.description}>{description}</p>
           </div>
-          <div className={classes.languagesUsedContainer}>
-            <h3 className={classes.languagesTitle}>Languages Used:</h3>
-            <p className={classes.languagesUsed}>{languagesUsed}</p>
-          </div>
-          <div className={classes.librariesUsedContainer}>
-            <h3 className={classes.librariesUsedTitle}>Libraries Used:</h3>
-            <p className={classes.librariesUsed}>{librariesUsed}</p>
-          </div>
-          <div className={classes.timeToBuildContainer}>
-            <h3 className={classes.timeToBuildTitle}>Time To Build:</h3>
-            <p className={classes.timeToBuild}>{timeToBuild}</p>
-          </div>
+          <section className={classes.techContainer}>
+            <div className={classes.container}>
+              <p className={classes.title}>Languages Used:</p>
+              <p className={classes.text}>{languagesUsed}</p>
+            </div>
+            <div className={classes.container}>
+              <p className={classes.title}>Libraries Used:</p>
+              <p className={classes.text}>{librariesUsed}</p>
+            </div>
+            <div className={classes.container}>
+              <p className={classes.title}>Time To Build:</p>
+              <p className={classes.text}>{timeToBuild}</p>
+            </div>
+          </section>
         </section>
-        <section className={classes.schoolProjectURLContainer}>
-          <p className={classes.schoolProjectURL}>
-            Click Here to See Project! {projectURL}
-          </p>
+        <section className={classes.container}>
+          <p className={classes.URL}>Click Below to See Project Live!</p>
+          <Link
+            to="https://sherreahlers.github.io/The-Game-of-War/"
+            className={classes.projectLink}
+          >
+            {projectURL}
+          </Link>
         </section>
       </main>
     </Layout>

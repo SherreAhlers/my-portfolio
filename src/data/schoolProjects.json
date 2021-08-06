@@ -2,10 +2,10 @@
   {
     "projectId": 1,
     "name": "The Game Of War",
-    "description": "This was the first coding project I built...",
+    "description": "This was the first coding project I built while I was attending General Assembly. I had never coded before I started school, so when it was time to create this project, I was a bit overwhelmed at first. I began training my brain to think in a different way and worked through my issues while building this project. \n\nI chose a card game called The Game of War for my project. One card is displayed by each player per round, highest card wins both cards, if both cards match 'War' begins. When 'War' is initiated each player displays three cards and the player with the highest final card displayed wins that round, if both final cards displayed are equal, another round of 'War' begins. The game is won when one player has all the cards. \n\nTo learn more about this project, please visit my GitHub repository Readme.",
     "languagesUsed": ["JavaScript  - HTML  - CSS"],
     "librariesUsed": ["Bootstrap"],
-    "projectURL": "",
+    "projectURL": "https://sherreahlers.github.io/The-Game-of-War/",
     "timeToBuild": "1 Week"
   },
   {
