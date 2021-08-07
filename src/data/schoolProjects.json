@@ -2,39 +2,45 @@
   {
     "projectId": 1,
     "name": "The Game Of War",
-    "description": "This was the first coding project I built while I was attending General Assembly. I had never coded before I started school, so when it was time to create this project, I was a bit overwhelmed at first. I began training my brain to think in a different way and worked through my issues while building this project. \n\nI chose a card game called The Game of War for my project. One card is displayed by each player per round, highest card wins both cards, if both cards match 'War' begins. When 'War' is initiated each player displays three cards and the player with the highest final card displayed wins that round, if both final cards displayed are equal, another round of 'War' begins. The game is won when one player has all the cards. \n\nTo learn more about this project, please visit my GitHub repository Readme.",
-    "languagesUsed": ["JavaScript  - HTML  - CSS"],
+    "description": "This was the first coding project I built while I was attending General Assembly. I had never coded before I started school, so when it was time to create this project, I was a bit overwhelmed at first. I began training my brain to think in a different way and worked through my issues while building this project. \nI chose a card game called The Game of War for my project. One card is displayed by each player per round, highest card wins both cards, if both cards match 'War' begins. When 'War' is initiated each player displays three cards and the player with the highest final card displayed wins that round, if both final cards displayed are equal, another round of 'War' begins. The game is won when one player has all the cards. \nTo learn more about this project, please visit my GitHub repository's Readme.",
+    "languagesUsed": ["JavaScript  * HTML  * CSS"],
     "librariesUsed": ["Bootstrap"],
+    "dataBasesUsed": ["None"],
+    "other": ["None"],
     "projectURL": "https://sherreahlers.github.io/The-Game-of-War/",
     "timeToBuild": "1 Week"
   },
   {
     "projectId": 2,
     "name": "Digital Bookshelf",
-    "description": "This was the second coding project I built...",
-    "languagesUsed": [
-      "JavaScript  - HTML  - CSS  - Express  - MongoDb  - Mongoose"
-    ],
-    "librariesUsed": ["Bootstrap"],
-    "projectURL": "",
+    "description": "This was the second coding project I built while attending General Assembly. I love to read, but I am always searching for new and exciting books. I created this project as a place to store book data. There is the ability to save a book that has been read and leave a comment about the book for others to read. I find it helpful to hear what other people liked or disliked about a book before I decide if I am going to read it. \nTo learn more about this project, please visit my GitHub repository's Readme.",
+    "languagesUsed": ["JavaScript  * HTML  * CSS"],
+    "librariesUsed": ["Bootstrap * JQuery * Express.js * Mongoose"],
+    "dataBasesUsed": ["MongoDB"],
+    "other": ["Node.js * Google OAuth * CRUD"],
+    "projectURL": "https://the-digital-bookshelf.herokuapp.com/",
     "timeToBuild": "1 Week"
   },
   {
     "projectId": 3,
     "name": "Scholar Stack",
-    "description": "This was the third coding project I built as a team of 3...",
-    "languagesUsed": ["Python  - HTML  - CSS  - Django"],
+    "description": "This project was done as a team. Three of us were teamed together randomly and tasked with creating a project while following SCRUM in an AGILE work environment. My role in this project was managing the GitHub repository and helping build the backend. This was our first time working with Git repositories as a team and there were a few issues that needed to be worked out. I did my research, asked questions and worked through the merging of the project files. We each were designated a certain section to code for the project and I believe we worked very well as a team. \nScholar Stack was created to help students in highschool get help on their homework from tutors. Students and Tutors can sign up on their seperate logins. Students are able to upload homework documents and request help, tutors are able to see the uploaded homework documents and leave comments for the students to look over and solutions to try.",
+    "languagesUsed": ["HTML  * CSS  * Python3"],
     "librariesUsed": ["Bootstrap"],
-    "projectURL": "",
+    "dataBasesUsed": ["SQLite3"],
+    "other": ["Django * Django Auth * AWS"],
+    "projectURL": "https://scholarstack.herokuapp.com/",
     "timeToBuild": "1 Week"
   },
   {
     "projectId": 4,
     "name": "Formation Tech",
-    "description": "This was the last coding project I built in school...",
-    "languagesUsed": ["JavaScript  - HTML  - CSS  - React.js  - Express.js"],
-    "librariesUsed": ["Bootstrap"],
-    "projectURL": "",
+    "description": "This was the final project I built while at General Assembly. It was built with oilfield water technologies in mind. There are so many different water technologies being used in the oilfield market, but the problem is there are so many technologies that are just an iteration of a previous technology with only one minor difference that could potentially be a gamechanger for a company. \nThis project was built so workers in the oilfield water technology field would have a place to post technologies, comments about those technologies, and leave reviews good or bad about certain technologies they have used in the hopes of helping companies find the most effiecient technologies to use.",
+    "languagesUsed": ["HTML  * CSS  * JavaScript"],
+    "librariesUsed": ["React.js * Bootstrap * Express.js * Mongoose "],
+    "dataBasesUsed": ["MongoDB"],
+    "other": ["Node.js * Token-based Auth * AJAX * JSON"],
+    "projectURL": "https://formation-tech.herokuapp.com/",
     "timeToBuild": "1 Week"
   }
 ]

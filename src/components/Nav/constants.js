@@ -7,7 +7,7 @@ export const NAVLINKS = [
   {
     id: 2,
     title: "SCHOOL PROJECTS",
-    path: "/school-projects",
+    path: "/schoolProjects",
   },
   {
     id: 3,

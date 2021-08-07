@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     height: "100%",
     paddingBottom: "50px",
     background:
-      "radial-gradient(orange, yellow, #F808BB, orange, purple, darkgreen, blue)",
+      "radial-gradient(orange, #F808BB, orange, #99940D, purple, darkgreen, blue)",
   },
   header: {
     margin: "30px 20px",
@@ -78,6 +78,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "600",
     [theme.breakpoints.up("md")]: {
       width: "600px",
+      height: "250px",
     },
   },
   container: {
@@ -85,12 +86,14 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
   },
   title: {
-    color: "white",
+    // color: "#454347",
+    color: "yellow",
     letterSpacing: ".7px",
     fontSize: "20px",
+    fontWeight: "bold",
   },
   text: {
-    color: "#454347",
+    color: "white",
     fontWeight: "bold",
     letterSpacing: "1px",
   },

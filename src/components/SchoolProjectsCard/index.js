@@ -1,6 +1,5 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { Link } from "gatsby"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { Card, CardMedia, CardContent } from "@material-ui/core"
 
@@ -19,31 +18,29 @@ const SchoolProjectsCard = ({ name }) => {
         className={classes.card}
         onClick={() => navigate(`/schoolProjects/${schoolProject}`)}
       >
-        <Link to={`/school-projects/${schoolProject}`}>
-          {isMinWidth960px ? (
-            <CardMedia
-              component="img"
-              height="300"
-              alt="projects"
-              image={
-                require(`../../images/schoolProjects/${schoolProject}-home-page.jpg`)
-                  .default
-              }
-              title="Schhol-Projects-Image"
-            />
-          ) : (
-            <CardMedia
-              component="img"
-              height="235"
-              alt="projects"
-              image={
-                require(`../../images/schoolProjects/${schoolProject}-home-page.jpg`)
-                  .default
-              }
-              title="School-Projects-Image"
-            />
-          )}
-        </Link>
+        {isMinWidth960px ? (
+          <CardMedia
+            component="img"
+            height="300"
+            alt="projects"
+            image={
+              require(`../../images/schoolProjects/${schoolProject}-home-page.jpg`)
+                .default
+            }
+            title="Schhol-Projects-Image"
+          />
+        ) : (
+          <CardMedia
+            component="img"
+            height="235"
+            alt="projects"
+            image={
+              require(`../../images/schoolProjects/${schoolProject}-home-page.jpg`)
+                .default
+            }
+            title="School-Projects-Image"
+          />
+        )}
         <CardContent className={classes.cardContent}>
           <span className={classes.projectsName}>{name}</span>
           <br></br>

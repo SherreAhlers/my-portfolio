@@ -13,8 +13,10 @@ const SchoolProjectContainer = ({ data }) => {
     description,
     languagesUsed,
     librariesUsed,
-    projectURL,
+    dataBasesUsed,
+    other,
     timeToBuild,
+    projectURL,
   } = data.schoolProjectsJson
 
   const schoolProject = name
@@ -56,6 +58,14 @@ const SchoolProjectContainer = ({ data }) => {
               <p className={classes.text}>{librariesUsed}</p>
             </div>
             <div className={classes.container}>
+              <p className={classes.title}>Database Used:</p>
+              <p className={classes.text}>{dataBasesUsed}</p>
+            </div>
+            <div className={classes.container}>
+              <p className={classes.title}>Other Technologies Used:</p>
+              <p className={classes.text}>{other}</p>
+            </div>
+            <div className={classes.container}>
               <p className={classes.title}>Time To Build:</p>
               <p className={classes.text}>{timeToBuild}</p>
             </div>
@@ -63,10 +73,7 @@ const SchoolProjectContainer = ({ data }) => {
         </section>
         <section className={classes.container}>
           <p className={classes.URL}>Click Below to See Project Live!</p>
-          <Link
-            to="https://sherreahlers.github.io/The-Game-of-War/"
-            className={classes.projectLink}
-          >
+          <Link to={`${projectURL}`} className={classes.projectLink}>
             {projectURL}
           </Link>
         </section>
@@ -84,6 +91,8 @@ export const query = graphql`
       description
       languagesUsed
       librariesUsed
+      dataBasesUsed
+      other
       projectURL
       timeToBuild
     }
