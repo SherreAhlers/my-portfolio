@@ -47,9 +47,6 @@ const useStyles = makeStyles(theme => ({
     height: "100%",
   },
   projectInfoContainer: {
-    // display: "flex",
-    // flexDirection: "column",
-    // alignSelf: "center",
     [theme.breakpoints.up("md")]: {
       display: "flex",
       flexDirection: "row",
