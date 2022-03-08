@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   gitHubLink: {
     fontSize: "15px",
-    color: "#1B05F8",
+    color: "white",
     letterSpacing: "1.5px",
   },
   linkdinLinkContainer: {
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   },
   linkdinLink: {
     fontSize: "15px",
-    color: "#1B05F8",
+    color: "white",
     letterSpacing: "1.5px",
   },
 }))

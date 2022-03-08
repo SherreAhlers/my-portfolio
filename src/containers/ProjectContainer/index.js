@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby-theme-material-ui"
 
 import Layout from "../../components/Layout"
 
@@ -70,7 +71,9 @@ const ProjectContainer = ({ data }) => {
         <section className={classes.techContainer}>
           <p className={classes.url}>
             Click below to see project live! <br></br>
-            {projectURL}
+            <Link to="https://www.crypticfarms.com" className={classes.link}>
+              {projectURL}
+            </Link>
           </p>
         </section>
       </main>

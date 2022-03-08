@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("md")]: {
       width: "550px",
       height: "450px",
+      // margin: '0'
     },
   },
   image: {

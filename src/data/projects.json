@@ -2,7 +2,7 @@
   {
     "projectId": 1,
     "name": "Platform Dance Showcase",
-    "description": "This is the first coding project I worked on after graduating General Assembly. This is an Agile team project. Every week we participated in zoom meetings to share the work we accomplished for the week and get feedback. Each week we were give our tasks; I've always met my deadlines. This project was started as a React project building the website from the ground up. As we we nearing the end of the React build, it was decided that we would convert the project to use Gatsby instead of React. \nThis site was created to allow dancers in the San Fransisco area have a place to showcase their performances and themselves.This is similar to a social media platform but without all the negativity.",
+    "description": "This is the first coding project I worked on after graduating General Assembly. This is an Agile team project. Every week we participated in zoom meetings to share the work we accomplished for the week and get feedback. Each week we were give our tasks; I've always met my deadlines. This project was started as a React project building the website from the ground up. As we we nearing the end of the React build, it was decided that we would convert the project to use Gatsby instead of React. \nThis site was created to allow dancers in the San Fransisco area have a place to showcase their performances and themselves. This is similar to a social media platform but without all the negativity.",
     "languagesUsed": ["HTML  * CSS  * JavaScript"],
     "librariesUsed": ["React.js * Material-UI"],
     "dataBasesUsed": ["GraphQL"],
@@ -12,19 +12,19 @@
   },
   {
     "projectId": 2,
-    "name": "Digital Bookshelf 2",
-    "description": "This is a new and improved version of my original project Digital Bookshelf. I am recreating this project using completely different technologies and libraries. I am applying all the information I have learned since creating the original project. \nI want this to be closer to a library of descriptions of books that people can interact with inorder to decide what to read next. I will also completely change the styling of the project to reflect what I have learned about CSS.",
+    "name": "Cryptic Farms",
+    "description": "Through a collaborative effort with a designer and his use of Figma, I was able to build this website. I had never used Figma, so at first interpreting the desgin was a bit challenging, but through persistance and research I was able to bring the design to life. This site was created for a crypto mining equipment hosting company located in Arkansas.",
     "languagesUsed": ["HTML  * CSS  * JavaScript"],
     "librariesUsed": ["React.js * Material-UI"],
     "dataBasesUsed": ["GraphQL"],
     "other": ["Gatsby.js"],
-    "projectURL": "coming soon",
-    "timeToBuild": "In progress"
+    "projectURL": "https://www.crypticfarms.com",
+    "timeToBuild": "1 month"
   },
   {
     "projectId": 3,
-    "name": "Demo-Bot",
-    "description": "I am working on this project for a demolition robotic company. This company is at the forefront of demolition automation and they need a site to display their products as well as sell their products. This will also be an information site sharing resources and demolition knowledge. \nThe bones of this site have been created, however, with a shortage in micro chips right now, production on demolition vehicles has stopped until the inventory picks back up. This site will be complete once the demolition vehicles are up and running.",
+    "name": "Digital Bookshelf 2",
+    "description": "This is a new and improved version of my original project Digital Bookshelf. I am recreating this project using completely different technologies and libraries. I am applying all the information I have learned since creating the original project. \nI want this to be closer to a library of descriptions of books that people can interact with inorder to decide what to read next. I will also completely change the styling of the project to reflect what I have learned about CSS.",
     "languagesUsed": ["HTML  * CSS  * JavaScript"],
     "librariesUsed": ["React.js * Material-UI"],
     "dataBasesUsed": ["GraphQL"],
