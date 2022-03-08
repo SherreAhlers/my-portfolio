@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SchoolProjectsContainer from "../containers/SchoolProjectsContainer"
+import SchoolProjectsContainer from "containers/SchoolProjectsContainer"
 
 const SchoolProjects = ({ data }) => {
   return (
